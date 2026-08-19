@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>repeticoes
-    </title>
+    <title>repeticoes</title>
 </head>
 <body>
-    
+    <h1>contador</h1>
+    <p>escolha um numero: <input type="number" name="number" id="number" value="1"></p>
+    <input type="button" value="contar" onclick="contar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function contar(){
+        var fn = document.getElementById('number').value
+        var res = document.getElementById('res')
+        var contador = 1
+         while(contador <= fn ){
+            res.innerHTML += ' ' + contador
+            contador ++
+         }
+        }
+    </script>
 </body>
 </html>
