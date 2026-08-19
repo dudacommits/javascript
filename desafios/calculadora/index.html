@@ -11,13 +11,14 @@
     <main>
         <h1><i class="fa-solid fa-calculator"></i> calculadora</h1>
         <div id="operacoes">
+            numero 
         </div>
         <div class="topo">C</div>
         <div class="topo">CE</div>
         <div class="topo"><i class="fa-solid fa-percent"></i></div>
         <div class="lat"><i class="fa-solid fa-divide"></i></div>
         <div class="number">7</div>
-        <div class="number"">8</div>
+        <div class="number">8</div>
         <div class="number">9</div>
         <div class="lat"><i class="fa-solid fa-xmark"></i></div>
         <div class="number">4</div>
@@ -32,5 +33,14 @@
         <div class="number">.</div>
         <div class="lat"><i class="fa-solid fa-equals"></i></div>
     </main>
+    <script>
+        var visor = document.getElementById('operacoes')
+        var botao = document.querySelectorAll('.number')
+        botao.addEventListener('click', clicou)
+        function clicou(){
+            var numeroclicado = Number(botao.innerText)
+            visor.innerHTML = numeroclicado
+        }
+    </script>
 </body>
 </html>

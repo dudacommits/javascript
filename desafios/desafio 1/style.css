@@ -1,0 +1,30 @@
+    body{
+            background-color: rgb(54, 68, 129);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+    header h1, footer p{
+        color: white;
+    }
+
+    section{
+        margin: auto;
+        text-align: center;
+        width: 600px;
+        height: 600px;
+        background-color: rgb(243, 243, 243);
+        border-radius: 20px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    div#msg {
+        padding: 10px;
+        
+    }
+
+    div#foto img{
+        padding: 10px;
+        border-radius: 50%;
+    }
