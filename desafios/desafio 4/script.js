@@ -1,10 +1,13 @@
 function tabuada(){
-    var n = document.getElementById('n').value
-    var m = 0
-    res = document.getElementById('res')
+    var n = Number(document.getElementById('n').value)
+    var m = 1
+    tab = document.getElementById('seltab')
+    tab.innerText = ''
     while(m<=10){
         var r = n*m
-        res.innerHTML += n + `x` + m + '=' + r + '<br>'
+        var item = document.createElement('option')
+        item.text = ` ${n} x ${m} = ${r}`
+        tab.appendChild(item)
         m++
     }
 }
