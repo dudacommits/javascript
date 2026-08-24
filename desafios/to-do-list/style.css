@@ -58,9 +58,29 @@ div.addtask input#addtask{
     cursor: pointer;
 }
 
-p{
-    font-size: 1.5em;
+h2{
+    margin-left: 10px;
+    font-size: 1.8em;
     font-weight: bold;
+    display: inline-block;
+    
+}
+
+p#texto{
+    
+    font-size: 1.1em;
+    margin-left: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+p{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#contador{
+    color: rgb(228, 98, 11);
 }
 
 div.task{
@@ -80,11 +100,17 @@ div.task{
     font-size: 0.9em;
 }
 
+div.task input#check{
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
 div.task input.buttontask{
     height: 40px;
     border: none;
     padding-left: 15px;
-    color: rgb(240, 114, 12);
+    color: deeppink;
     background-color: transparent;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
