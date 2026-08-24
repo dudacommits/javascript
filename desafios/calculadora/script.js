@@ -1,5 +1,5 @@
 var visor = document.getElementById('operacoes')
-var botao = document.querySelectorAll('div.number')
+var botao = document.querySelector('div.number')
 botao.addEventListener('click', clicou)
 function clicou(){
     var numeroclicado = Number(botao.innerText)

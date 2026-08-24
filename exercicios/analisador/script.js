@@ -19,18 +19,25 @@ function adicionar(){
 }
 function finalizar(){
     var res = document.getElementById('res')
-    numeros.sort()
     var soma = 0
     var c = 0
+    numeros.sort()
     while (c<numeros.length){
         soma = soma + numeros[c]
         c++
     }
-    var media = soma/ (numeros.length)
-
+    var media = soma / (numeros.length)
+    var maior = numeros[0]
+    for (let t in numeros){
+        if (numeros[t]>maior){
+            maior = numeros[t]
+        }
+    }
+    
 
     res.innerHTML = `<p>Ao todo foram adicionados ${numeros.length} numeros</p> <br>`
     res.innerHTML += `<p>O menor valor informado foi ${numeros[0]}</p> <br>`
+    res.innerHTML += `<p>O maior valor informado foi ${maior}</p> <br>`
     res.innerHTML += `<p>Somando todos os valores temos ${soma}</p> <br>`
     res.innerHTML += `<p>a media dos valores digitados e ${media}</p> <br>`
 
