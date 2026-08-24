@@ -5,6 +5,7 @@ var txt = document.getElementById('texto')
 
 function addtask(){
     c ++
+    txt.innerHTML = `<p id="texto">voce tem <span id="contador">${c}</span> tasks para concluir hoje</p>`
     var task = document.getElementById('task').value
     var newtask = document.createElement('div')
     newtask.classList.add('task')
@@ -26,7 +27,7 @@ function addtask(){
 
 function concluido(){
     c --
-    txtc.innerHTML = c
+    txt.innerHTML = `<p id="texto">voce tem <span id="contador">${c}</span> tasks para concluir hoje</p>`
     if(c==0){
      txt.innerHTML = 'Parabens! voce concluiu todas as tasks de hoje!'  
     } 

@@ -100,6 +100,14 @@ div.task{
     font-size: 0.9em;
 }
 
+input#check{
+    accent-color: deeppink;
+}
+
+span#ptask{
+ 
+}
+
 div.task input#check{
     margin-right: 8px;
     width: 20px;
