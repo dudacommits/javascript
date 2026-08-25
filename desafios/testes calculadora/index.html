@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <style>
+        div.number{
+            display: inline-block;
+            background-color: cadetblue;
+            padding: 20px;
+            margin: 10px;
+
+        }
+        div#visor{
+            padding: 30px;
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste calculadora</h1>
+    <div id="visor"></div>
+    <div class="number">1</div>
+    <div class="number">2</div>
+    <div class="number">3</div>
+    
+    <script>
+        let botoes = document.querySelectorAll('.number')
+        let visor = document.getElementById('visor')
+
+        botoes.forEach(botao => {
+             botao.addEventListener('click', clicou)
+        });
+       
+        function clicou (event){
+            let numeroescolhido = event.target.innerText
+            visor.innerHTML = numeroescolhido
+        }
+
+    </script>
+</body>
+</html>
