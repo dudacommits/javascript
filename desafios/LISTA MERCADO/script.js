@@ -11,7 +11,7 @@ function adicionaritem(){
 
     let novoitem = document.createElement('div')
     novoitem.classList.add('produto')
-    novoitem.innerHTML = `<p class="nit"> item:${item}</p> <p class="val">valor:${preco}</p> <p class="est">estoque:${quantidade}</p>`;
+    novoitem.innerHTML = `<p class="nit"> ${item}</p> <p class="val">valor:${preco}</p> <p class="est">estoque:${quantidade}</p>`;
 
     document.querySelector('section').appendChild(novoitem);
 }

@@ -4,29 +4,70 @@
 }
 
 body{
-    background-color: rgb(33, 133, 163);
+    background-color: rgb(8, 12, 17);
 }
 
 header h1 , footer p {
-    text-align: center;
+    text-align: start;
     color: white;
 }
 
 div#registro{
+    justify-content: space-around;
+    display: flex;
+    color: white;
     margin-bottom: 30px;
 }
+
+h2{
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+
+#registro p{
+    background-color: rgba(44, 51, 75, 0.493);
+    display: inline-block;
+}
+
+input#item, input#preco, input#quantidade{
+    background-color: rgba(83, 100, 131, 0.61);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+input::placeholder {
+  font-size: larger;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+}
+
+input#add{
+    padding: 8px;
+    width: 100px;
+    background-color: rgb(54, 143, 76);
+    border-radius: 20px;
+    border: none;
+    color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 
 div.produto{
 
     display: flex;
     justify-content: space-between;
-    background-color: rgb(204, 220, 230);
+    background-color: rgba(56, 67, 87, 0.61);
 }
 
 div.produto p {
+    color: white;
     padding: 10px;
     width: 100%;
-    border: 2px solid rgb(186, 200, 209);
+    border: 2px solid rgb(24, 36, 53);
     display: inline-block;
 }
 
@@ -35,7 +76,7 @@ section{
     padding: 25px;
     font-size: 1.2em;
     text-align: start;
-    background-color: white;
+    background-color: rgb(29, 43, 63);
     border-radius: 15px;
     margin: auto;
     
