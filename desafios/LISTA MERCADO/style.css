@@ -1,5 +1,5 @@
 *{
-    
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,7 +12,26 @@ header h1 , footer p {
     color: white;
 }
 
+div#registro{
+    margin-bottom: 30px;
+}
+
+div.produto{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(204, 220, 230);
+}
+
+div.produto p {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid rgb(186, 200, 209);
+    display: inline-block;
+}
+
 section{
+    max-width: 1000px;
     padding: 25px;
     font-size: 1.2em;
     text-align: start;
