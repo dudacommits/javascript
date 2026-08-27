@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de produtos</title>
+    <link rel="stylesheet" href="style.css">'
+    
+</head>
+<body>
+    <main>
+        <h1>Lista de Produtos</h1>
+            <nav>
+                <input type="text" name="buscar" id="buscar" placeholder="buscar" onclick="pesquisar()">
+                <input type="button" value="Todos" onclick="renderizar()">
+                <input type="button" value="Desconto" onclick="desconto()">
+                <input type="button" value="Sem estoque" onclick="semestoque()">
+                <input type="button" value="Estoque Baixo" onclick="estoquebaixo()">
+            </nav>
+        <div id="lista">
+            
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
