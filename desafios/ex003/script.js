@@ -21,7 +21,7 @@ function renderizar(){
         var addproduto = document.createElement('div')
         addproduto.classList.add('item')
         addproduto.innerHTML = `
-        <p>${produto.nome}</p> <p>Preço: ${produto.preco}</p> <p>Estoque: ${produto.quantidade}</p>
+        <p>${produto.nome}</p> <p>Preço: ${produto.preco}</p> <p>Estoque: ${produto.quantidade}</p><input type="button" value="+ ao carrinho">
         `
         lista.appendChild(addproduto)
 });
@@ -80,6 +80,8 @@ function pesquisar(){
         
 });
     }
-    
-    
+}
+
+function carrinho(){
+    alert('ola')
 }

@@ -29,7 +29,7 @@ nav{
     justify-content: space-evenly;
 }
 
-nav input{
+nav input.options{
     color: white;
     
     background-color: rgb(64, 39, 110);
@@ -41,17 +41,43 @@ nav input{
     border-radius: 15px;
     border: none;
     cursor: pointer;
+     transition: translate 0.3s ease , background-color 0.3s ease;
+}
+
+nav a {
+    color: white;
+    
+    background-color: rgb(64, 39, 110);
+    font-size: 1.1em;
+    padding: 8px 10px;
+    border-radius: 15px;
      transition: translate 0.3s ease, background-color 0.3s ease; 
 }
 
-nav input:hover{
+nav a:hover{
     translate: -0% -10%;
-    background-color: rgb(50, 30, 88)
+    color: rgb(88, 34, 138);
+    background-color: rgb(226, 219, 238)
+}
+
+
+nav input.options:hover{
+    translate: -0% -10%;
+    color: rgb(88, 34, 138);
+    background-color: rgb(226, 219, 238)
 }
 
 #buscar{
-width: 60px;
-transition: width 0.4s ease-in-out; 
+    color: white;
+    
+    background-color: rgb(64, 39, 110);
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 15px;
+    width: 60px;
+    transition: width 0.4s ease-in-out; 
 }
 
 #buscar:focus{
