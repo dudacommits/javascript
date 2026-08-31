@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(45deg, rgb(11, 30, 116) , purple);
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.26);
+    width: 90vw;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    min-height: 210px;
+
+}
+
+main h1 {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav input.options{
+    color: white;
+    
+    background-color: rgb(64, 39, 110);
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 8px 35px;
+    align-items: stretch;
+    justify-content: stretch;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+     transition: translate 0.3s ease , background-color 0.3s ease;
+}
+
+nav a {
+    color: white;
+    
+    background-color: rgb(64, 39, 110);
+    font-size: 1.1em;
+    padding: 8px 10px;
+    border-radius: 15px;
+     transition: translate 0.3s ease, background-color 0.3s ease; 
+}
+
+nav a:hover{
+    translate: -0% -10%;
+    color: rgb(88, 34, 138);
+    background-color: rgb(226, 219, 238)
+}
+
+
+nav input.options:hover{
+    translate: -0% -10%;
+    color: rgb(88, 34, 138);
+    background-color: rgb(226, 219, 238)
+}
+
+#buscar{
+    color: white;
+    
+    background-color: rgb(64, 39, 110);
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 15px;
+    width: 60px;
+    transition: width 0.4s ease-in-out; 
+}
+
+#buscar:focus{
+    width: 140px;
+}
+
+#buscar:hover{
+    translate: -0% -0%;
+}
+
+#buscar::placeholder {
+  color: #ffffffd2; 
+  opacity: 1;     
+}
+
+#head{
+    display: none;
+    margin-top: 20px;
+    padding: 15px 50px 10px;
+    
+    background-color: rgba(214, 214, 214, 0.377);
+    justify-content: start;
+}
+
+#head span {
+    margin-left: 140px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#lista {
+    margin: 0px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    background-color: rgba(214, 214, 214, 0.377);
+}
+
+.item {
+    
+    background-image: linear-gradient(45deg, white , rgb(235, 234, 234));
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.199);
+    width: 95%;
+    margin: 0px auto 10px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item p {
+    font-weight: 600;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+input#addcarrinho{
+    background-color: rgba(214, 183, 233, 0.884);
+    border: none;
+    font-size: 1em;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}

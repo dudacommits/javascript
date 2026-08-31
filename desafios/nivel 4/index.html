@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca7100e5dd.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <main>
+        <h1>Lista de Produtos</h1>
+            <nav>
+                <input type="text" name="buscar" id="buscar" placeholder="buscar" onclick="pesquisar()">
+                <input class="options" type="button" value="Todos" onclick="renderizar()">
+                <input class="options" type="button" value="Desconto" onclick="desconto()">
+                <input class="options" type="button" value="Sem estoque" onclick="semestoque()">
+                <input class="options" type="button" value="Estoque Baixo" onclick="estoquebaixo()">
+                <a href="#" onclick="vercarrinho()"><i class="fa-solid fa-cart-shopping"></i> </a>
+                
+            </nav>
+            <div id="head"><span>item</span><span>valor</span><span>estoque</span> <span>ações</span></div>
+        <div id="lista">
+            
+        </div>
+
+        <div id="carrinhocompras">
+            <h3>Produtos</h3>
+            <h3>Preço</h3>
+            <h3>Quantidade</h3>
+            <h3>Subtotal</h3>
+
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

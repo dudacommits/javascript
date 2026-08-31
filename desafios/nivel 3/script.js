@@ -11,60 +11,49 @@ var produtos = [
     {id: 9, nome: 'Cadeira Gamer', preco: 1100, temDesconto: true, quantidade: 3},
     {id: 10, nome: 'Webcam Full HD', preco: 190, temDesconto: false, quantidade: 12}
 ]
+const vercarrinho = []
+const head = document.getElementById('head')
+const lista = document.getElementById('lista')
+caixadebusca = document.getElementById('buscar')
+caixadebusca.addEventListener('input', pesquisar)
 
-
-var lista = document.getElementById('lista')
-
-function renderizar(){
-    lista.innerHTML = ''
-    produtos.forEach(produto => {
+function mostrar(a){
+    a.forEach(produto => {
+        head.style.display = 'flex'; 
         var addproduto = document.createElement('div')
         addproduto.classList.add('item')
         addproduto.innerHTML = `
-        <p>${produto.nome}</p> <p>Preço: ${produto.preco}</p> <p>Estoque: ${produto.quantidade}</p><input type="button" value="+ ao carrinho">
+        <p>${produto.nome}</p> <p>${produto.preco}</p> <p>${produto.quantidade}</p><input type="button" id="addcarrinho" value="+ ao carrinho">
         `
         lista.appendChild(addproduto)
 });
+}
+
+function renderizar(){
+    lista.innerHTML = ''
+    mostrar(produtos)
 }
 
 function desconto(){
     lista.innerHTML = ''
     const comdesconto = produtos.filter(produto => produto.temDesconto)
 
-    comdesconto.forEach(produto => {
-        var addproduto = document.createElement('div')
-        addproduto.classList.add('item')
-        addproduto.innerHTML = `<p>${produto.nome}</p> <p>Preço: ${produto.preco}</p> <p>Estoque: ${produto.quantidade}</p>`
-        lista.appendChild(addproduto)
-});
+    mostrar(comdesconto)
 }
 
 function semestoque(){
     lista.innerHTML = ''
     const noestoque = produtos.filter( produto => produto.quantidade == 0)
 
-    noestoque.forEach(produto => {
-        var addproduto = document.createElement('div')
-        addproduto.classList.add('item')
-        addproduto.innerHTML = `<p>${produto.nome}</p> <p>Preço: ${produto.preco}</p> <p>Estoque: ${produto.quantidade}</p>`
-        lista.appendChild(addproduto)
-});
+    mostrar(noestoque)
 }
 
 function estoquebaixo(){
     lista.innerHTML = ''
     const baixoestoque = produtos.filter( produto => produto.quantidade <= 4 && produto.quantidade > 0)
 
-    baixoestoque.forEach(produto => {
-        var addproduto = document.createElement('div')
-        addproduto.classList.add('item')
-        addproduto.innerHTML = `<p>${produto.nome}</p><p>Preço: ${produto.preco}</p><p>Estoque: ${produto.quantidade}</p> `
-        lista.appendChild(addproduto)
-});
+    mostrar(baixoestoque)
 }
-
-caixadebusca = document.getElementById('buscar')
-caixadebusca.addEventListener('input', pesquisar)
 
 function pesquisar(){
     lista.innerHTML = ''
@@ -72,16 +61,12 @@ function pesquisar(){
     if (txt === '') return; else{
         const pesquisarproduto = produtos.filter( produto => produto.nome.toLowerCase().includes(txt.toLowerCase()))
 
-    pesquisarproduto.forEach(produto => {
-        var addproduto = document.createElement('div')
-        addproduto.classList.add('item')
-        addproduto.innerHTML = `<p>${produto.nome}</p> <p>Preço: ${produto.preco}</p> <p>Estoque: ${produto.quantidade}</p>`
-        lista.appendChild(addproduto)
+    mostrar(pesquisarproduto)
         
-});
     }
 }
 
 function carrinho(){
     alert('ola')
 }
+

@@ -93,19 +93,88 @@ nav input.options:hover{
   opacity: 1;     
 }
 
+#head{
+    display: none;
+    margin-top: 20px;
+    padding: 15px 50px 10px;
+    
+    background-color: rgba(214, 214, 214, 0.377);
+    justify-content: start;
+}
+
+#head span {
+    margin-left: 140px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#lista {
+    margin: 0px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    background-color: rgba(214, 214, 214, 0.377);
+}
+
 .item {
     
     background-image: linear-gradient(45deg, white , rgb(235, 234, 234));
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.199);
     width: 95%;
-    margin: 15px auto;
+    margin: 0px auto 10px auto;
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .item p {
     font-weight: 600;
     font-size: 1.1em;
     display: inline-block;
+}
+
+input#addcarrinho{
+    background-color: rgba(214, 183, 233, 0.884);
+    border: none;
+    font-size: 1em;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+#carrinhocompras {
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    gap: 0px;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 30px auto;
+}
+
+
+#carrinhocompras p{
+    text-align: center;
+    align-content: center;
+    margin: 0px;
+    padding: 15px;
+    border: 2px solid rgb(228, 228, 228);
+    background-color: rgb(241, 241, 241);
+    border-collapse: collapse;
+}
+
+#carrinhocompras h3{
+    font-size: 1.2em;
+    text-align: center;
+    align-content: center;
+    margin: 0px;
+    padding: 15px;
+    border: 2px solid rgb(228, 228, 228);
+    background-color: rgb(233, 233, 233);
+    border-collapse: collapse;
+}
+
+input#qnt{
+    padding: 7px;
+    width: 40px;
 }
