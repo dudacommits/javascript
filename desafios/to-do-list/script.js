@@ -9,7 +9,7 @@ function addtask(){
     var task = document.getElementById('task').value
     var newtask = document.createElement('div')
     newtask.classList.add('task')
-    newtask.innerHTML = `<p><input type="checkbox" name="check" id="check"> ${task}</p> <div id="buttons"><input type="button" value="EDITAR" id="editar" class="buttontask"> <input type="button" value="DELETAR" id="deletar" class="buttontask"></div></div>`
+    newtask.innerHTML = `<p><input type="checkbox" name="check" id="check"> ${task}</p> <div id="buttons"><input type="button" value="DELETAR" id="deletar" class="buttontask"></div></div>`
     main.appendChild(newtask)
     txtc.innerHTML = c
 
@@ -31,7 +31,7 @@ function concluido(){
     if(c==0){
      txt.innerHTML = 'Parabens! voce concluiu todas as tasks de hoje!'  
     } 
-    this.parentElement.parentElement.style.backgroundColor = 'rgb(57, 165, 36)'
+    this.parentElement.parentElement.style.backgroundColor = '#1b1b25'
 }
 
  function deletartask(){

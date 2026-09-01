@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de tarefas
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca7100e5dd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>salve a sua proxima tarefa</h1>
+        
+            <input type="text" id="txttarefa" placeholder="oque voce planeja fazer?">
+            <button id="enviar" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        
+        </header>
+        <div id="lista">
+            <h2>estas sao as suas tarefas</h2>
+            <ul id="listatarefas"></ul>
+            <li  class="caixatarefa">
+                <span>beber agua</span>
+                <div class="icons">
+                    <i class="fa-solid fa-check" id="confirm"></i>
+                    <i class="fa-solid fa-xmark" id="delete"></i>
+                </div>
+            </li>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

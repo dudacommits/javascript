@@ -6,12 +6,16 @@
     <title>Lista de tarefas</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ca7100e5dd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <main>
-        <h1>To Do List</h1>
-        <div class="addtask"><input type="text" name="task" id="task" value="" placeholder="What do you have planned?"> <input type="button" id="addtask" value="ADD TASK" onclick="addtask()"></div>
-        <h2>Today's Tasks</h2>
+        <h1>ToDoLi App</h1>
+        <div class="addtask">
+            <input type="text" name="task" id="task" value="" placeholder="Oque você planejou hoje?"> <input type="button" id="addtask" value="ADD TASK" onclick="addtask()">
+        </div>
+        <h2>Tasks de hoje</h2>
         <p id="texto">voce tem <span id="contador"> 0</span> tasks para concluir hoje</p>
     </main>
 <script src="script.js"></script>
