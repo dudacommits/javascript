@@ -11,20 +11,20 @@ body{
     gap: 0px;
 }
 
-li#done{
-    background-color: rgb(124, 69, 98);
-    color: white;
-}
 
-li#done span {text-decoration: line-through;}
 
 main{
-    padding: 20px;
+    padding: 20px 0px;
     border-radius: 10px;
     text-align: center;
     width: 70vw;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.158);
+}
+
+#inputtxt{
+    display: flex;
+    justify-content:center;
 }
 
 #txttarefa{
@@ -33,10 +33,8 @@ main{
     list-style-type: none;
     background-color: white;
     color: black;
-    width: 350px;
-    margin: auto;
+    width: 360px;
     padding: 20px;
-    
     border: none;
 }
 
@@ -56,7 +54,6 @@ button{
     border: none;
     border-start-end-radius: 5px;
     border-end-end-radius: 5px;
-    translate: -5px 0px;
     transition: background-color 0.3s;
 }
 
@@ -65,10 +62,12 @@ button:hover{
     color: white;
 }
 
+ul#listatarefas{
+    padding: 0px;
+}
 
 li.caixatarefa{
     display: flex;
-    padding: 3px;
     justify-content: space-between;
     text-align: start;
     align-items: center;
@@ -78,29 +77,38 @@ li.caixatarefa{
     background-color: white;
     color: black;
     width: 450px;
-    margin: auto;
+    margin: 0px auto 15px;
     border-radius: 5px;
     box-shadow: 4px 4px 0px rgb(143, 5, 148);
 }
 
-li span{
+li.caixatarefa span{
     margin-left: 15px;
 }
 
+li#done{
+    background-color: rgb(124, 69, 98);
+    color: white;
+}
 
-#confirm, #delete{
+li#done span {
+    text-decoration: line-through;
+}
+
+.confirm, .delete{
+    margin-left: -5px;
     padding: 15px;
     margin-bottom: -3px;
     transition: 0.4s;
 }
 
-#confirm:hover{
-    background-color: greenyellow;
+.confirm:hover{
+    background-color: rgb(68, 165, 30);
     padding: 15px;
     margin-bottom: -3px;
 }
 
-#delete:hover{
+.delete:hover{
     background-color: red;
     padding: 15px;
     margin-bottom: -3px;
