@@ -4,22 +4,61 @@ body{
     height: 100vh;
     background-image: linear-gradient(45deg, rgb(130, 25, 161), rgb(194, 17, 114),rgb(219, 79, 14));
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-rows: auto 80px auto auto ;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: 0px;
     padding: 0px;
     gap: 0px;
 }
 
+h1{
+    margin: 0px;
+    font-size: 3em;
+    text-align: center;
+    place-self: end center;
+    grid-row: 2;
+    height: 50px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+#today{
+    text-align: center;
+}
+
+ #today h3{
+    color: rgb(88, 7, 88);
+    margin: 25px 0px;
+    font-size: 1.6em;
+    display: inline-block;
+}
+
+#today p{
+    
+    font-size: 1.09em;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.contador{
+    color: rgb(88, 7, 88);
+    font-weight: 700;
+}
 
 
 main{
-    padding: 20px 0px;
+    grid-row: 3;
+    padding: 35px 0px;
     border-radius: 10px;
     text-align: center;
-    width: 70vw;
+    width: 80vw;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.158);
+    background-color: rgba(247, 247, 247, 0.144);
 }
 
 #inputtxt{
@@ -64,7 +103,10 @@ button:hover{
 
 ul#listatarefas{
     padding: 0px;
+    margin: 0px;
 }
+
+
 
 li.caixatarefa{
     display: flex;
@@ -80,32 +122,38 @@ li.caixatarefa{
     margin: 0px auto 15px;
     border-radius: 5px;
     box-shadow: 4px 4px 0px rgb(143, 5, 148);
+
+    transition: background-color 0.3s ease;
 }
 
-li.caixatarefa span{
-    margin-left: 15px;
+li.caixatarefa.done{
+    
+    background-color: rgb(124, 69, 98) !important;
+    color: white !important;
+
 }
 
-li#done{
-    background-color: rgb(124, 69, 98);
-    color: white;
+li.caixatarefa.done span.txt {
+    text-decoration: line-through !important;
 }
 
-li#done span {
-    text-decoration: line-through;
+span.txt{
+    margin-left: 20px;
+}
+
+.confirm{
+    translate: 5px;
 }
 
 .confirm, .delete{
-    margin-left: -5px;
+    
     padding: 15px;
-    margin-bottom: -3px;
     transition: 0.4s;
 }
 
 .confirm:hover{
     background-color: rgb(68, 165, 30);
-    padding: 15px;
-    margin-bottom: -3px;
+
 }
 
 .delete:hover{
