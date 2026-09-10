@@ -16,5 +16,3 @@ async function segundaFuncao() {
 }
 
 // pratica
-
-function 
