@@ -1,0 +1,93 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 1rem;
+}
+
+#main{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+
+button{
+    padding: 7px 12px ;
+    background-color: #888;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 1em;
+    transition: 0.4s;
+}
+
+#open-modal{
+    background-color: #007BFF;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+#modal {
+    transition: 0.5s, top 0.8s ;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fadee{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    pointer-events: none;
+}
+
+#modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 90%;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc ;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body p {
+    margin-bottom: 1.5rem;
+}
+
+#modal.hide, #fadee.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide{
+ top: 30%;
+}
