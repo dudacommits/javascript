@@ -6,9 +6,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="app-de-clima.png" type="image/x-icon">
     <title>Clima Agora!</title>
 </head>
-<body>
+<body id="body" class="default">
+
+    <h1> <img src="app-de-clima.png" alt="sol" id="h1-img"> Clima agora!</h1>
+
     <div class="container">
         <div class="form">
             <h3>Confira o Clima de uma cidade:</h3>
@@ -23,6 +27,13 @@
             </div>
         </div>
 
+        <div id="sujest">
+        </div>
+
+        <div id="loading" class="hide">
+            <p>Carregando...</p>
+        </div>
+
         <div id="weather-data" class="hide">
 
             <h2>
@@ -34,31 +45,46 @@
                  id="country">
             </h2>
 
-            <p id="temperature">
-                <span></span>
-                &deg;C
-            </p>
-
-            <div id="description-container">
-                <p id="description"></p>
+            <div id="description-container" class="night">
                 <img
                  src=""
                   alt="condicoes climaticas"
                    id="weather-icon">
+                   <p id="temperature">
+                <span></span>
+                
+                </p>
+                <p id="description"></p>
+        
             </div>
 
             <div id="details-container">
-                <p id="humidity">
+                <p id="max-temp" class="card">
+                    <i class="fa-solid fa-temperature-arrow-up"></i>
+                    <span>67</span>
+                </p>
+                <p id="min-temp" class="card">
+                    <i class="fa-solid fa-temperature-arrow-down"></i>
+                    <span></span>
+                </p>
+                <p id="humidity" class="card">
                     <i class="fa-solid fa-droplet"></i>
                     <span></span>
                 </p>
-                <p id="wind">
+                <p id="wind" class="card">
                     <i class="fa-solid fa-wind"></i>
                     <span></span>
                 </p>
             </div>
 
         </div>
+    </div>
+    <div id="fadee" class="fechar">
+    </div>
+    <div id="modal" class="fechar">
+        <h2>ops!</h2>
+        <p>erro ao localizar a cidade, por favor insira o valor novamente.</p>
+        <button id="btnModal">ok</button>
     </div>
 </body>
 </html>
