@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/pngtree-3d-realistrc-pokemon-ball-art-pic-png-image_11751536.png" type="image/x-icon">
+
+    <script defer src="script.js"></script>
     <title>Pokedex</title>
 </head>
 <body>
@@ -21,6 +23,29 @@
                 charizard
             </span>
         </h1>
+
+        <form class="form">
+            <input
+            type="search"
+            id="input-search"
+            placeholder="name or number"
+            required
+            >
+        </form>
+
+        <div class="buttons">
+
+            <button
+            class="button btn-prev">
+            Prev &lt;
+            </button>
+
+            <button
+            class="button btn-next">
+            Next &gt;
+            </button>
+
+        </div>
 
         <img class="pokedex"
         src="imagens/pokedex (1).png"
